@@ -4,3 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+# Core Gitoxide library (async client over gix-protocol)
+gix = { version = "0.73.0", default-features = false, features = ["async-network-client"] }
+anyhow = "1.0"      # for simple error handling
+
